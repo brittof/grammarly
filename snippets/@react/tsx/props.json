@@ -1,0 +1,9 @@
+{
+	"React.component.properties": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "prp",
+		"body": [
+			"type ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}Props = { $1 }"
+		]
+	}
+}

@@ -1,0 +1,9 @@
+{
+	"hook.functional.component.state": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "hfcs",
+		"body": [
+			"const [${1:state}, set${1/(.*)/${1:/capitalize}/}] = React.useState($2)"
+		]
+	}
+}

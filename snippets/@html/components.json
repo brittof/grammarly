@@ -1,0 +1,40 @@
+{
+	"html.base.struct": {
+		"scope": "html",
+		"prefix": "hbs",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"pt-BR\">",
+			"    <head>",
+			"        <meta charset=\"utf-8\" />",
+			"        <meta name=\"viewport\" content=\"width=device-width\" />",
+			"        <link rel=\"icon\" href=\"public/favicon.svg\" type=\"image/svg+xml\" />",
+			"        <link rel=\"stylesheet\" href=\"styles.css\" />",
+			"        <title>${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}</title>",
+			"    </head>",
+			"    <body>",
+			"        $2",
+			"    </body>",
+			"</html>"
+		]
+	},
+	"html.base.react": {
+		"scope": "html",
+		"prefix": "hbr",
+		"body": [
+			"<!DOCTYPE html>",
+			"<html lang=\"pt-BR\">",
+			"    <head>",
+			"        <meta charset=\"utf-8\" />",
+			"        <meta name=\"viewport\" content=\"width=device-width\" />",
+			"        <link rel=\"icon\" href=\"public/favicon.svg\" type=\"image/svg+xml\" />",
+			"        <script type=\"module\" src=\"/src/main.tsx\" defer></script>",
+			"        <title>${TM_DIRECTORY/^.+[\\/\\\\]+(.*)$/$1/}</title>",
+			"    </head>",
+			"    <body>",
+			"        <div id=\"root\"></div>",
+			"    </body>",
+			"</html>"
+		]
+	}
+}

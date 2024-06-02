@@ -1,0 +1,44 @@
+{
+	"console.log": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "clg",
+		"body": [
+			"console.log(${TM_SELECTED_TEXT});"
+		]
+	},
+	"console.error": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "cle",
+		"body": [
+			"console.error(${TM_SELECTED_TEXT});"
+		]
+	},
+	"console.warn": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "clw",
+		"body": [
+			"console.warn(${TM_SELECTED_TEXT});"
+		]
+	},
+	"console.info": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "cli",
+		"body": [
+			"console.info(${TM_SELECTED_TEXT});"
+		]
+	},
+	"console.table": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "clt",
+		"body": [
+			"console.table(${TM_SELECTED_TEXT});"
+		]
+	},
+	"console.debug": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "cld",
+		"body": [
+			"console.debug(${TM_SELECTED_TEXT});"
+		]
+	}
+}

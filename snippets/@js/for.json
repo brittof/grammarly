@@ -1,0 +1,20 @@
+{
+	"forOf": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fof",
+		"body": [
+			"for (const ${TM_SELECTED_TEXT/^(.+)s$/${1}/} of ${TM_SELECTED_TEXT}) {",
+			"    $2",
+			"}"
+		]
+	},
+	"forIn": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fin",
+		"body": [
+			"for (const key in ${TM_SELECTED_TEXT}) {",
+			"    $2",
+			"}"
+		]
+	}
+}

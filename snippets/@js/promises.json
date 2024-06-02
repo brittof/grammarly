@@ -1,0 +1,37 @@
+{
+	"asynchronous.promises": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "prm",
+		"body": [
+			"const promise = new Promise((resolve, reject) => {",
+			"    $1",
+			"})",
+			"",
+			"promise",
+			"    .then((response) => {",
+			"        $2",
+			"    })",
+			"    .catch((error) => {",
+			"        console.error(error);",
+			"    })"
+		]
+	},
+	"asynchronous.setTimeout": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "sett",
+		"body": [
+			"setTimeout(() => {",
+			"    $1",
+			"}, $2)"
+		]
+	},
+	"asynchronous.setInterval": {
+		"scope": "javascript,typescript,javascriptreact,typescriptreact",
+		"prefix": "seti",
+		"body": [
+			"setInterval(() => {",
+			"    $1",
+			"}, $2)"
+		]
+	}
+}

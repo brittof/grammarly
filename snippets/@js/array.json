@@ -1,0 +1,214 @@
+{
+	"Array.at": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnat",
+		"body": [
+			"${TM_SELECTED_TEXT}.at(${1:index});"
+		]
+	},
+	"Array.reduce": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnrc",
+		"body": [
+			"${TM_SELECTED_TEXT}.reduce((accumulator, index) => {",
+			"    $2",
+			"}, ${3:initialValue});"
+		]
+	},
+	"Array.map": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnmp",
+		"body": [
+			"${TM_SELECTED_TEXT}.map((${TM_SELECTED_TEXT/^(.+)s$/${1}/}) => {",
+			"    $2",
+			"});"
+		]
+	},
+	"Array.filter": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnfl",
+		"body": [
+			"${TM_SELECTED_TEXT}.filter((${TM_SELECTED_TEXT/^(.+)s$/${1}/}) => {",
+			"    $2",
+			"});"
+		]
+	},
+	"Array.find": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnfi",
+		"body": [
+			"${TM_SELECTED_TEXT}.find((${TM_SELECTED_TEXT/^(.+)s$/${1}/}) => {",
+			"    $2",
+			"});"
+		]
+	},
+	"Array.some": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnsm",
+		"body": [
+			"${TM_SELECTED_TEXT}.some((${TM_SELECTED_TEXT/^(.+)s$/${1}/}) => {",
+			"    $2",
+			"});"
+		]
+	},
+	"Array.sort": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnsr",
+		"body": [
+			"${TM_SELECTED_TEXT}.sort((a, b) => {",
+			"    return a.localeCompare(b);",
+			"});"
+		]
+	},
+	"Array.every": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnev",
+		"body": [
+			"${TM_SELECTED_TEXT}.every((current) => {});"
+		]
+	},
+	"Array.forEach": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnfe",
+		"body": [
+			"${TM_SELECTED_TEXT}.forEach((${TM_SELECTED_TEXT/^(.+)s$/${1}/}) => {",
+			"    $2",
+			"});"
+		]
+	},
+	"Array.includes": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnin",
+		"body": [
+			"${TM_SELECTED_TEXT}.includes(${1:searchElement});"
+		]
+	},
+	"Array.indexOf": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnio",
+		"body": [
+			"${TM_SELECTED_TEXT}.indexOf(${1:searchElement});"
+		]
+	},
+	"Array.join": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnjo",
+		"body": [
+			"${TM_SELECTED_TEXT}.join(${1:separator});"
+		]
+	},
+	"Array.slice": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnsl",
+		"body": [
+			"${TM_SELECTED_TEXT}.slice(${1:start}, ${2:end});"
+		]
+	},
+	"Array.splice": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnsp",
+		"body": [
+			"${TM_SELECTED_TEXT}.splice(${1:start}, ${2:deleteCount}, ${3:item});"
+		]
+	},
+	"Array.concat": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fncc",
+		"body": [
+			"${TM_SELECTED_TEXT}.concat(${1:array});"
+		]
+	},
+	"Array.reverse": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnrv",
+		"body": [
+			"${TM_SELECTED_TEXT}.reverse();"
+		]
+	},
+	"Array.push": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnpu",
+		"body": [
+			"${TM_SELECTED_TEXT}.push(${1:item});"
+		]
+	},
+	"Array.pop": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnpo",
+		"body": [
+			"${TM_SELECTED_TEXT}.pop();"
+		]
+	},
+	"Array.shift": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnsh",
+		"body": [
+			"${TM_SELECTED_TEXT}.shift();"
+		]
+	},
+	"Array.unshift": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnun",
+		"body": [
+			"${TM_SELECTED_TEXT}.unshift(${1:item});"
+		]
+	},
+	"Array.fill": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnfll",
+		"body": [
+			"${TM_SELECTED_TEXT}.fill(${1:value}, ${2:start}, ${3:end});"
+		]
+	},
+	"Array.flat": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnft",
+		"body": [
+			"${TM_SELECTED_TEXT}.flat(${1:depth});"
+		]
+	},
+	"Array.flatMap": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnfm",
+		"body": [
+			"${TM_SELECTED_TEXT}.flatMap((${TM_SELECTED_TEXT/^(.+)s$/${1}/}) => {",
+			"    $2",
+			"});"
+		]
+	},
+	"Array.copyWithin": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fncw",
+		"body": [
+			"${TM_SELECTED_TEXT}.copyWithin(${1:target}, ${2:start}, ${3:end});"
+		]
+	},
+	"Array.keys": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnke",
+		"body": [
+			"${TM_SELECTED_TEXT}.keys();"
+		]
+	},
+	"Array.values": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnva",
+		"body": [
+			"${TM_SELECTED_TEXT}.values();"
+		]
+	},
+	"Array.entries": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnen",
+		"body": [
+			"${TM_SELECTED_TEXT}.entries();"
+		]
+	},
+	"Array.with": {
+		"scope": "javascript,javascriptreact,typescript,typescriptreact",
+		"prefix": "fnwi",
+		"body": [
+			"${TM_SELECTED_TEXT}.with(${1:index}, ${2:value});"
+		]
+	}
+}

@@ -1,0 +1,161 @@
+{
+	"name": "grammarly",
+	"version": "1.0.0",
+	"description": "Utility code snippets based on real use cases. Grammarly is not intended to be a bloated, unnecessary utility.",
+	"displayName": "Grammarly",
+	"author": "Britto <britto@programmer.net>",
+	"publisher": "Britto",
+	"license": "MIT",
+	"icon": "icon.png",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/brittof/grammarly.git"
+	},
+	"keywords": [
+		"grammarly",
+		"code snippets",
+		"extension",
+		"react",
+		"javascript",
+		"typescript",
+		"html",
+		"css"
+	],
+	"engines": {
+		"vscode": "^1.60.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "javascript",
+				"path": "./snippets/@js/array.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/@js/for.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/@js/promises.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/@js/console.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/@react/jsx/components.json"
+			},
+			{
+				"language": "javascript",
+				"path": "./snippets/@react/shared/hooks.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/@js/array.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/@js/for.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/@js/promises.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/@js/console.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/@react/jsx/components.json"
+			},
+			{
+				"language": "javascriptreact",
+				"path": "./snippets/@react/shared/hooks.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/@js/array.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/@js/for.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/@js/promises.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/@js/console.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/@react/tsx/components.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/@react/tsx/props.json"
+			},
+			{
+				"language": "typescript",
+				"path": "./snippets/@react/shared/hooks.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/@js/array.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/@js/for.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/@js/promises.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/@js/console.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/@react/tsx/components.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/@react/tsx/props.json"
+			},
+			{
+				"language": "typescriptreact",
+				"path": "./snippets/@react/shared/hooks.json"
+			},
+			{
+				"language": "html",
+				"path": "./snippets/@html/components.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/@css/reset.json"
+			},
+			{
+				"language": "css",
+				"path": "./snippets/@css/typography.json"
+			},
+			{
+				"language": "scss",
+				"path": "./snippets/@css/reset.json"
+			},
+			{
+				"language": "scss",
+				"path": "./snippets/@css/typography.json"
+			}
+		]
+	},
+	"devDependencies": {
+		"@vscode/vsce": "^2.26.1"
+	}
+}

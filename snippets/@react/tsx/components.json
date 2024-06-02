@@ -1,0 +1,98 @@
+{
+	"React.function.component": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "rfc",
+		"body": [
+			"export default function ${TM_FILENAME_BASE/^(.)(.*)/${1:/upcase}${2}/}() {",
+			"  return (",
+			"    $3",
+			"  )",
+			"}"
+		],
+		"description": "React Function Component"
+	},
+	"Stateless.function.component": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "sfc",
+		"body": [
+			"import type React from \"react\"",
+			"",
+			"export const ${TM_FILENAME_BASE/^(.)(.*)/${1:/upcase}${2}/}: React.FC = () => {",
+			"  return (",
+			"    $3",
+			"  )",
+			"}"
+		],
+		"description": "Stateless Function Component (Arrow Function)"
+	},
+	"React.router.component": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "rrc",
+		"body": [
+			"import type React from \"react\"",
+			"import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from \"react-router-dom\"",
+			"",
+			"const routes = createBrowserRouter(",
+			"  createRoutesFromElements(",
+			"    <Route path=\"/\" element={}>",
+			"       <Route index element={} />",
+			"    </Route>",
+			"  )",
+			")",
+			"",
+			"export const ${TM_FILENAME_BASE/^(.)(.*)/${1:/upcase}${2}/}: React.FC = () => {",
+			"  return (",
+			"    <RouterProvider router={routes} />",
+			"  )",
+			"}"
+		]
+	},
+	"React.formData.component": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "rfd",
+		"body": [
+			"import type React from \"react\";",
+			"",
+			"const $2 = async (formData: FormData) => {",
+			"    const $3 = formData.get(\"$3\");",
+			"}",
+			"",
+			"export const ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}: React.FC = () => {",
+			"  return (",
+			"    <form action={$2}>",
+			"      <input type=\"${4:text}\" name=\"$3\" placeholder=\"${3/(.*)/${1:/capitalize}/}\" />",
+			"",
+			"      <button type=\"submit\">$5</button>",
+			"    </form>",
+			"  )",
+			"}"
+		]
+	},
+	"React.fetchApi.component": {
+		"scope": "typescript,typescriptreact",
+		"prefix": "rfa",
+		"body": [
+			"import React from \"react\";",
+			"",
+			"type ResponseProps = {",
+			"  $3",
+			"}",
+			"",
+			"const request = async (endpoint: string) => {",
+			"  const response = await fetch(`https://${4:api.github.com}/\\${endpoint}`);",
+			"",
+			"  return response.json();",
+			"}",
+			"",
+			"export const ${TM_FILENAME_BASE/(^.)(.*)/${1:/upcase}${2}/}: React.FC = () => {",
+			"  const $5 = React.use<ResponseProps[]>(request(\"$5\"));",
+			"",
+			"  return (",
+			"    <>",
+			"        { $5?.map((${5/^(.+)s$/${1}/}) => ($6)) }",
+			"    </>",
+			"  )",
+			"}"
+		]
+	}
+}
