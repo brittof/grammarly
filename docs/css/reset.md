@@ -2,7 +2,7 @@
 
 | Snippets    | Long Snippet        | Description       |
 |:-----------:| ------------------- | ----------------- |
-|`rdf→`       | `reset.default.css` | Reset Default |
+|`rdf→`       | `reset.default` | Reset Default |
 |`rim→`       | `reset.image`       | Reset image   |
 |`ran→`       | `reset.anchor`      | Reset anchor  |
 |`rbt→`       | `reset.button`      | Reset button  |
